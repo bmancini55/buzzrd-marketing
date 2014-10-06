@@ -1,0 +1,41 @@
+body {
+  background-color: #6b6c6e;
+}
+
+.navbar-buzzrd {
+  background-image: none;
+  background-color: #57585a;
+  color: #faa819;
+}
+.navbar-buzzrd a {
+  color: #faa819;
+  text-shadow: 0 0 0 !important;
+}
+.navbar-buzzrd .nav > li >a {
+  padding-top: 30px;
+  padding-bototm: 30px;
+}
+.navbar-buzzrd .nav>li>a:hover, 
+.navbar-buzzrd .nav>li>a:focus {
+  background-color: #57585a;
+}
+
+.navbar-brand { 
+  height: 80px;
+  padding-top: 30px;
+}
+
+.buzzrd-intro { 
+  text-align: center;
+  margin-top: -20px;
+  background-color: #616264;
+  color: #f0f0f0;
+}
+.buzzrd-intro .buzzrd-large {  
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.buzzrd-intro p {  
+  font-size: 28px;
+}
+
