@@ -1,41 +1,183 @@
-body {
-  background-color: #6b6c6e;
+
+/* FONTS
+****************************************************************/
+
+@font-face {
+    font-family: 'buzzrdregular';
+    src: url('/fonts/buzzrd-regular-webfont.eot');
+    src: url('/fonts/buzzrd-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/buzzrd-regular-webfont.woff2') format('woff2'),
+         url('/fonts/buzzrd-regular-webfont.woff') format('woff'),
+         url('/fonts/buzzrd-regular-webfont.ttf') format('truetype'),
+         url('/fonts/buzzrd-regular-webfont.svg#buzzrdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.navbar-buzzrd {
+@font-face {
+    font-family: 'buzzrdlight';
+    src: url('/fonts/buzzrd-light-webfont.eot');
+    src: url('/fonts/buzzrd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/buzzrd-light-webfont.woff2') format('woff2'),
+         url('/fonts/buzzrd-light-webfont.woff') format('woff'),
+         url('/fonts/buzzrd-light-webfont.ttf') format('truetype'),
+         url('/fonts/buzzrd-light-webfont.svg#buzzrdlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+******************************************************************/
+
+/* Color Pallete 
+
+Secondary dark:   #f58720;
+Secondary medium: #faa819;
+Secondary light:  #ffcf74;
+
+*/
+
+
+
+body {
+  background-color: #252626;
+  font-family: "buzzrdregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #464646;
+}
+
+
+.bz-body {
+  min-height: 600px;
+  background-color: #e2e3e4;
+}
+
+.bz-footer {
+  background-color: #252626;
+  color: #f0f0f0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.bz-navbar {
   background-image: none;
   background-color: #57585a;
   color: #faa819;
+  margin-bottom: 0;
 }
-.navbar-buzzrd a {
+.bz-navbar a {
   color: #faa819;
   text-shadow: 0 0 0 !important;
+  font-weight: normal;
+  font-family: "buzzrdlight", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-.navbar-buzzrd .nav > li >a {
-  padding-top: 30px;
-  padding-bototm: 30px;
-}
-.navbar-buzzrd .nav>li>a:hover, 
-.navbar-buzzrd .nav>li>a:focus {
+.bz-navbar .nav>li>a:hover, 
+.bz-navbar .nav>li>a:focus {
   background-color: #57585a;
 }
 
-.navbar-brand { 
-  height: 80px;
-  padding-top: 30px;
+.bz-navbar .navbar-toggle { 
+  background-color: #57585a;
+  border-color: #faa819;  
+}
+.bz-navbar .navbar-toggle .icon-bar {
+  background-color: #faa819;
+}
+.bz-navbar .navbar-toggle:hover {
+  background-color: #67686a;
 }
 
-.buzzrd-intro { 
+.navbar-brand img {
+  height: 20px;  
+}
+
+.bz-intro { 
   text-align: center;
-  margin-top: -20px;
   background-color: #616264;
   color: #f0f0f0;
+  border-bottom: 4px solid #faa819;
 }
-.buzzrd-intro .buzzrd-large {  
-  padding-top: 40px;
+.bz-intro .bz-logo-lg-container {  
+  padding-top: 0px;
   padding-bottom: 40px;
 }
-.buzzrd-intro p {  
+.bz-intro p {  
   font-size: 28px;
 }
+.bz-logo-lg {
+  display: inline-block;
+  width: 33.33%;
+  min-width: 140px;
+  height: auto;
+}
 
+
+.bz-about {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bz-about p {
+  font-size: 1.75rem;
+  line-height: 3.5rem;
+}
+
+.bz-section-title {
+  text-transform: uppercase;
+}
+
+hr {
+  background: #f2724e;
+  margin: 24px auto;
+  background: #f2724e;
+  width: 150px;
+  padding: 1px;
+
+}
+
+.bz-screenshots {
+  margin-top: 30px;
+}
+
+.bz-screenshots img {
+  width: 87%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #909090;
+  max-width: 320px;
+}
+
+.bz-screenshot-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .bz-intro p {
+    font-size: 22px;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .bz-intro p {
+    font-size: 18px;
+  }
+
+  .bz-section-title {
+    font-size: 18px;
+  }
+
+  .bz-about p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
