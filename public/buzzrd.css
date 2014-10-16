@@ -2,7 +2,7 @@
 /* FONTS
 ****************************************************************/
 
-@font-face {
+/*@font-face {
     font-family: 'buzzrdregular';
     src: url('/fonts/buzzrd-regular-webfont.eot');
     src: url('/fonts/buzzrd-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -24,6 +24,32 @@
          url('/fonts/buzzrd-light-webfont.svg#buzzrdlight') format('svg');
     font-weight: normal;
     font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('/fonts/lato-regular-webfont.eot');
+    src: url('/fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('/fonts/lato-regular-webfont.woff') format('woff'),
+         url('/fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('/fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('/fonts/lato-light-webfont.eot');
+    src: url('/fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/lato-light-webfont.woff2') format('woff2'),
+         url('/fonts/lato-light-webfont.woff') format('woff'),
+         url('/fonts/lato-light-webfont.ttf') format('truetype'),
+         url('/fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
@@ -42,7 +68,7 @@ Secondary light:  #ffcf74;
 
 body {
   background-color: #252626;
-  font-family: "buzzrdregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "latoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #464646;
 }
 
@@ -70,7 +96,7 @@ body {
   color: #faa819;
   text-shadow: 0 0 0 !important;
   font-weight: normal;
-  font-family: "buzzrdlight", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "latolight", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .bz-navbar .nav>li>a:hover, 
 .bz-navbar .nav>li>a:focus {
